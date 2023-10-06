@@ -1,6 +1,15 @@
+// File: index.js
+// Description: 
+//  Main entry point for the application;
+//  Runs the server and handles all requests
+// Author: Jamey Bryce
+// Date Created: 10/06/2023
+
+// Import dependencies
 const express = require('express');
 const colors = require('colors');
 const morgan = require('morgan');
+const path = require('path');
 const exphbs = require('express-handlebars');
 
 const app = express();
@@ -9,8 +18,9 @@ const app = express();
 app.use(morgan('tiny'));
 
 // Handlebars middleware
-app.engine('handlebars', exphbs({
-    layoutsDir: path.join(__dirname, 'views/layouts')
+app.engine('handlebars', exphbs.engine({
+    layoutsDir: path.join(__dirname, 'views/layouts'),
+    defaultLayout: 'main'
 }));
 app.set('view engine', 'handlebars');
 
@@ -22,12 +32,12 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/about', (req, res) => {
-    res.render('about', {
-        title: 'About Me',
-        message: 'Learn more about me and my work.'
-    });
-});
+// app.get('/about', (req, res) => {
+//     res.render('about', {
+//         title: 'About Me',
+//         message: 'Learn more about me and my work.'
+//     });
+// });
 
 // Start server
 const PORT = process.env.PORT || 5000;
