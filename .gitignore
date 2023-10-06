@@ -33,6 +33,3 @@ scratch/
 
 # Ignore my notes
 notes/
-
-# Ignore my .gitignore file
-.gitignore
