@@ -30,17 +30,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 app.get('/', (req, res) => {
     res.render('home', {
-        title: 'Home Page',
-        message: 'Welcome to my website!'
+        title: 'JameyDev - FullStack Developer - Home Page',
+        time: new Date().toLocaleString()
     });
 });
-
-// app.get('/about', (req, res) => {
-//     res.render('about', {
-//         title: 'About Me',
-//         message: 'Learn more about me and my work.'
-//     });
-// });
 
 // Start server
 const PORT = process.env.PORT || 5000;
