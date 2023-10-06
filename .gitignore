@@ -1,0 +1,41 @@
+# Ignore everything by default
+*
+
+# Except the following directories and files
+!.gitignore
+!public/
+!public/images/
+!public/**/*.jpg
+!public/css/
+!public/css/*.css
+!src/
+!*.html
+!*.css
+!*.js
+!*.jpg
+!*.jpeg
+!*.png
+
+# include views/, views/layout, and all .handlebars files in them
+!views/
+!views/layouts/
+!views/**/*.handlebars
+
+# include src/, src/components, and all .js files in them
+src/
+src/components/
+src/**/*.js
+
+# include public/, public/images, and all image files in them
+public/
+public/images/
+public/**/*.jpg
+public/**/*.jpeg
+public/**/*.png
+
+# include package.json and package-lock.json
+package.json
+package-lock.json
+
+# Ignore node_modules directory
+node_modules/
