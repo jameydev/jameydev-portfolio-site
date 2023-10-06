@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <header>
+        <header class="sticky-top">
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -21,8 +21,10 @@
         <main>
             {{{body}}}
         </main>
-        <footer>
-            &copy; 2023 JameyDev | Server Time: {{time}}
+        <footer class="sticky-bottom">
+            Page Accessed @ {{time}}
+            <br>
+            &copy; 2023 JameyDev
         </footer>
     </body>
 </html>
