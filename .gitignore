@@ -5,7 +5,8 @@
 !.gitignore
 !public/
 !public/images/
-!public/**/*.jpg
+!public/images/*.jpg
+!public/images/*.png
 !public/css/
 !public/css/*.css
 !src/
@@ -21,21 +22,9 @@
 !views/layouts/
 !views/**/*.handlebars
 
-# include src/, src/components, and all .js files in them
-src/
-src/components/
-src/**/*.js
-
-# include public/, public/images, and all image files in them
-public/
-public/images/
-public/**/*.jpg
-public/**/*.jpeg
-public/**/*.png
-
 # include package.json and package-lock.json
-package.json
-package-lock.json
+!package.json
+!package-lock.json
 
 # Ignore node_modules directory
 node_modules/
