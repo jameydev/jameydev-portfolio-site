@@ -2,7 +2,6 @@
 *
 
 # Except the following directories and files
-!.gitignore
 !public/
 !public/images/
 !public/images/*.jpg
@@ -28,3 +27,12 @@
 
 # Ignore node_modules directory
 node_modules/
+
+# Ignore my scratch work
+scratch/
+
+# Ignore my notes
+notes/
+
+# Ignore my .gitignore file
+.gitignore
