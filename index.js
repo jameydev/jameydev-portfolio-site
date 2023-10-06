@@ -24,6 +24,9 @@ app.engine('handlebars', exphbs.engine({
 }));
 app.set('view engine', 'handlebars');
 
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Routes
 app.get('/', (req, res) => {
     res.render('home', {
@@ -41,6 +44,7 @@ app.get('/', (req, res) => {
 
 // Start server
 const PORT = process.env.PORT || 5000;
+const HOST = process.env.HOST || 'http://localhost';
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`.green.bold);
+    console.log(`Server running on port ${HOST}:${PORT}`.green.bold);
 });
