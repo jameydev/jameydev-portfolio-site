@@ -8,7 +8,7 @@
 !public/images/*.png
 !public/css/
 !public/css/*.css
-!src/
+!routes/
 !*.html
 !*.css
 !*.js

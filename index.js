@@ -11,6 +11,7 @@ const colors = require('colors');
 const morgan = require('morgan');
 const path = require('path');
 const exphbs = require('express-handlebars');
+const home = require('./routes/home');
 
 const app = express();
 
@@ -28,12 +29,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
-app.get('/', (req, res) => {
-    res.render('home', {
-        title: 'JameyDev - FullStack Developer - Home Page',
-        time: new Date().toLocaleString()
-    });
-});
+app.use(require('./routes/home'));
 
 // Start server
 const PORT = process.env.PORT || 5000;
