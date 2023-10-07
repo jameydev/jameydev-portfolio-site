@@ -13,6 +13,9 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const home = require('./routes/home');
 
+// Load dotenv variables
+require('dotenv').config();
+
 const app = express();
 
 // Logging middleware

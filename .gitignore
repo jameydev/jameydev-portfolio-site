@@ -25,6 +25,9 @@
 !package.json
 !package-lock.json
 
+# Ignore environment variable file
+.env
+
 # Ignore node_modules directory
 node_modules/
 
