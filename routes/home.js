@@ -5,12 +5,8 @@
 // Date Created: 10/06/2023
 
 const router = require('express').Router();
+const { getHome } = require('../controllers/homeController');
 
-const home = router.get('/', (req, res) => {
-    res.render('home', {
-        title: 'JameyDev - FullStack Developer - Home Page',
-        time: new Date().toLocaleString()
-    });
-});
+const home = router.get('/', getHome);
 
 module.exports = home;
