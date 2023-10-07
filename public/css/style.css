@@ -6,9 +6,12 @@
  *   Date Created: 10/06/2023
 */
 
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 /* Global styles */
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier Prime', 'Courier New', Courier, monospace;
     color: #fff;
     background-color: #272727;
     margin: 0;
@@ -52,6 +55,20 @@ header nav li {
 #welcome {
     margin: 2rem auto;
     padding: 2rem;
+}
+
+/* Card styles */
+.card {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.45);
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    border-radius: 0.3rem;
 }
 
 /* Sticky header/footer */
@@ -113,4 +130,13 @@ form textarea {
 
 form input[type="submit"] {
     align-self: flex-start;
+}
+
+/* Desktop/Laptop/Wide-tablet Styles */
+@media (min-width: 600px) {
+    #welcome {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
 }
