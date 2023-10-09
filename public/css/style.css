@@ -71,16 +71,12 @@ header nav li {
     border-radius: 0.3rem;
 }
 
-/* .swiper-container #welcome .card:not(:first-child) {
-    display: none;
-} */
-
 /* Sticky header/footer */
-.sticky-top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+/* .sticky-top { */
+/*     position: fixed; */
+/*     top: 0; */
+/*     width: 100%; */
+/* } */
 
 .sticky-bottom {
     position: fixed;
