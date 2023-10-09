@@ -132,11 +132,9 @@ form input[type="submit"] {
     align-self: flex-start;
 }
 
-/* Desktop/Laptop/Wide-tablet Styles */
-@media (min-width: 600px) {
-    #welcome {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 1rem;
-    }
+/* Slick carousel */
+.slider {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
