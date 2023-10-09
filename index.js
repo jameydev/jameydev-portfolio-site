@@ -6,11 +6,28 @@
 // Date Created: 10/06/2023
 
 // Import dependencies
+// const Swiper = import('swiper'); maybe not...
 const express = require('express');
 const colors = require('colors');
 const morgan = require('morgan');
 const path = require('path');
 const exphbs = require('express-handlebars');
+
+// const swiper = new Swiper('.swiper-container', {
+//     direction: 'horizontal',
+//     loop: true,
+//     autoplay: {
+//         delay: 5000,
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+// });
 
 // Load dotenv variables
 require('dotenv').config();

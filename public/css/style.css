@@ -71,6 +71,10 @@ header nav li {
     border-radius: 0.3rem;
 }
 
+/* .swiper-container #welcome .card:not(:first-child) {
+    display: none;
+} */
+
 /* Sticky header/footer */
 .sticky-top {
     position: fixed;
