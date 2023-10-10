@@ -115,6 +115,38 @@ form {
     flex-direction: column;
 }
 
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#contact-form {
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 85%;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.45);
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 form label {
     margin-bottom: 0.5rem;
 }
@@ -124,8 +156,14 @@ form input[type="email"],
 form textarea {
     padding: 0.5rem;
     border-radius: 0.25rem;
+    background: #252525;
+    color: #fff;
     border: 1px solid #ccc;
     margin-bottom: 1rem;
+}
+
+form textarea {
+    height: 5rem;
 }
 
 form input[type="submit"] {
