@@ -27,6 +27,9 @@
 !package.json
 !package-lock.json
 
+# include README
+!README.md
+
 # Ignore environment variable file
 .env
 
