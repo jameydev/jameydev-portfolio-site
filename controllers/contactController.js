@@ -1,6 +1,6 @@
 // File: contactController.js
 // Description: 
-//  Renders the contact form
+//  Handles the contact form
 // Author: Jamey Bryce
 // Date Created: 10/09/2023
 const nodemailer = require('nodemailer');
