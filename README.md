@@ -4,6 +4,7 @@ This repository contains the code for my portfolio
 website (currently in progress).
 
 ## Planned Features
+
 - Dynamic Up-to-date resume
 - Social Links
 - Blog using MongoDB
