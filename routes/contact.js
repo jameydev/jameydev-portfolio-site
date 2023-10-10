@@ -10,6 +10,6 @@ const {
     sendForm 
 } = require('../controllers/contactController');
 
-const contact = router.get('/contact', getContactForm).post('/', sendForm);
+const contact = router.get('/contact', getContactForm).post('/contact', sendForm);
 
 module.exports = contact;
