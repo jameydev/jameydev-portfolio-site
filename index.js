@@ -46,6 +46,7 @@ app.get('/js/slider.js', (req, res) => {
 
 // Routes
 app.use(require('./routes/home'));
+app.use(require('./routes/contact'));
 
 // Start server
 const PORT = process.env.PORT || 5000;
