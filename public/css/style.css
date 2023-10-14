@@ -113,17 +113,12 @@ legend {
 }
 
 #contact-form {
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
     width: 85%;
     background-color: #333;
     color: #fff;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.45);
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
-    border-radius: 0.3rem;
 }
 
 fieldset {
@@ -160,4 +155,26 @@ form input[type="submit"] {
     text-align: center;
     width: 100%;
     margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    #contact-form fieldset {
+        width: 70%;
+        margin: 1rem auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    #contact-form {
+        margin: 2rem auto;
+        width: 60%;
+    }
+
+    #contact-form legend {
+        margin: 2rem auto;
+    }
+
+    #contact-form fieldset {
+        width: 50%;
+    }
 }
