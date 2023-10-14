@@ -37,8 +37,8 @@ header {
     padding: 1rem;
 }
 
-header h1 {
-    margin: 0;
+#main-heading {
+    margin: 3rem;
 }
 
 header nav ul {
