@@ -52,13 +52,13 @@ const sendForm = (req, res) => {
     const { name, email, message } = req.body;
 
     // Create a transporter object
-    const transporter = createTransporter();
+    // const transporter = createTransporter();
 
-    // Set up the email options
-    const mailOptions = getEmailOptions(name, email);
+    // // Set up the email options
+    // const mailOptions = getEmailOptions(name, email);
 
-    // Send the email
-    transporter.sendMail(mailOptions, mailHandler);
+    // // Send the email
+    // transporter.sendMail(mailOptions, mailHandler);
 }
 
 module.exports = {
