@@ -157,6 +157,7 @@ form input[type="submit"] {
     margin: 0 auto;
 }
 
+/* Larger screen styles */
 @media (min-width: 768px) {
     #contact-form fieldset {
         width: 70%;
@@ -168,6 +169,10 @@ form input[type="submit"] {
     #contact-form {
         margin: 2rem auto;
         width: 60%;
+    }
+
+    .card {
+        width: 15%;
     }
 
     #contact-form legend {
