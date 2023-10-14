@@ -12,11 +12,13 @@ const morgan = require('morgan');
 const path = require('path');
 const exphbs = require('express-handlebars');
 const mime = require('mime-types');
+const bodyParser = require('body-parser');
 
 // Load dotenv variables
 require('dotenv').config();
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Logging middleware
 app.use(morgan('tiny'));
@@ -31,17 +33,26 @@ app.set('view engine', 'handlebars');
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Set the MIME type explicitly for slider.js
-app.get('/js/slider.js', (req, res) => {
+// Set the MIME type explicitly
+// for client side scripts
+const setFormMimeType = (req, res, file) => {
     const filePath = path.join(
         __dirname, 
         'public', 
         'js', 
-        'slider.js'
+        file
     );
     const mimeType = mime.lookup(filePath);
     res.set('Content-Type', mimeType);
     res.sendFile(filePath);
+}
+
+app.get('/js/slider.js', (req, res) => {
+    setFormMimeType(req, res, 'slider.js');
+});
+
+app.get('/js/form.js', (req, res) => {
+    setFormMimeType(req, res, 'form.js');
 });
 
 // Routes
